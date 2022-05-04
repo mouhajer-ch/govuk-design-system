@@ -32,9 +32,22 @@ This example shows the minimum required for a GOV.UK page.
 
 ## Customised page template
 
-You can customise the page template, for example, by adding a service name and navigation or adding a block before the main container to include a [back link](/components/back-link/) or [phase banner](/components/phase-banner/).
+You can customise the page template by, for example:
+
+- adding a [back link](/components/back-link/) or [phase banner](/components/phase-banner/)
+- changing where the [skip link](/components/skip-link/), [header](/components/header/) or [footer](/components/footer/) links to
+
+### Add a back link or phase banner
+To customise the page template to include a back link or phase banner, add one of the following:
+
+- a service name and navigation
+- a block before the main container
 
 {{ example({group: "styles", item: "page-template", example: "custom", customCode: true, html: true, nunjucks: true, open: false, size: "xl" }) }}
+
+### Change where the skip link, header or footer links to
+
+By default, the page template contains a skip link, header and footer. To customise any of these components, override the block displayed at the top of the component's macro options. For example, if you need to change the `href` attribute, which defines where the component links to.
 
 ## Changing template content
 
